@@ -21,6 +21,6 @@ browser.smtp_password = "abcdefg"     # Enter the app-password of the email to b
 ## Installation and Running
 Install latest python version and run the following commands.
 ```python
-> pip install requirements.txt
+> pip install -r requirements.txt
 > python bot.py
 ```

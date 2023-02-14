@@ -59,6 +59,8 @@ class Browser:
         self.option.add_experimental_option('useAutomationExtension', False)
 
         self.option.add_argument('--disable-blink-features=AutomationControlled')
+        # Add this option if you don't want the browser to be shown
+        self.option.add_argument("--headless")
         # self.option.add_argument("start-maximized")
         self.option.add_argument("window-size=1280,800")
         self.option.add_argument("user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36")
@@ -246,7 +248,6 @@ if __name__ == "__main__":
     # https://in.bookmyshow.com/buytickets/ant-man-and-the-wasp-quantumania-3d-hyderabad/movie-hyd-ET00351697-MT/20230217
     while(True):
         main(site)
-        print("Sleeping for 30 mins")
-        logging.info("Sleeping for 30 mins")
-        sleep(1800)
+        print("Sleeping for 10 mins")
+        sleep(600)
         ## TODO: Quit/stop the script for a particular show when email is already sent.
